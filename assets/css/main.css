@@ -7,6 +7,20 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/*
+	Main Colors
+	Neutral Black (coated): #3c3c3b
+	Cool Gray (coated): #dadad9
+	Forest Green (coated): #006532
+	Orange (coated):#f49719
+
+	Secondary Colors
+	Green (coated): #2eac66
+	Baby Blue (coated): #009ee3
+	Wine Red (coated: #be1621
+	Neutral Black: #1c1c1b
+*/
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -29,8 +43,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+
 body {
 	line-height: 1;
+
 }
 
 ol, ul {
@@ -253,7 +270,7 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px #ffffff;
+		border-left: solid 4px #009ee3;
 		font-style: italic;
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
@@ -1058,8 +1075,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
-			color: #1b1f22 !important;
+			background-color: #2eac66;
+			color: #ffffff !important;
 			font-weight: 600;
 		}
 
@@ -1135,7 +1152,10 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			/* background-image: url("../../images/bg.jpg"); */
+			background: #006532;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to left #006532, #f49719);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to left, #006532, #f49719); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */		
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1273,6 +1293,23 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+		}
+
+		#header h3 {
+			color: #f49719;
+		}
+
+		#header a {
+			color: #009ee3;
+			font-weight: 600;
+		}
+
+		
+		#header .header-image {
+			width: 100%;
+			max-width: 40rem;
+			height: auto; 
+			max-height: 30rem;
 		}
 
 			#header .logo .icon:before {
@@ -1599,6 +1636,18 @@ input, select, textarea {
 			}
 
 		}
+
+	#employers h2 {
+		color: #f49719;
+	}
+
+	#students h2 {
+		color: #f49719;
+	}
+
+	#flyer h2 {
+		color: #f49719
+	}
 
 /* Footer */
 
