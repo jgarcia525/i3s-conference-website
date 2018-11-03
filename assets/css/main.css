@@ -1078,6 +1078,12 @@ input, select, textarea {
 			background-color: #2eac66;
 			color: #ffffff !important;
 			font-weight: 600;
+			align: center;
+		}
+
+		.center-button {
+			display: flex;
+			justify-content: center;
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
