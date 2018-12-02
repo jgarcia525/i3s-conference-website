@@ -1140,7 +1140,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			/* background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png"); */
 			background-size: auto, 256px 256px;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
@@ -1261,6 +1261,7 @@ input, select, textarea {
 		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
+		text-shadow: 1px 1px black;
 		color: white;
 	}
 
@@ -1300,13 +1301,19 @@ input, select, textarea {
 			border-radius: 100%;
 		}
 
-		#header h3 {
-			color: #f49719;
+		#header h2 {
+			color: #006532;
+			font-weight: 900;
 		}
 
 		#header a {
 			color: #009ee3;
-			font-weight: 600;
+			font-weight: 700;
+		}
+
+		#header p {
+			color: white;
+			font-weight: 700;
 		}
 
 		
@@ -1480,6 +1487,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
+
+			.content-mobile {
+				display: none;
+			}
 
 			#header {
 				padding: 1.5rem 0;
