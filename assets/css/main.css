@@ -1261,7 +1261,7 @@ input, select, textarea {
 		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
-		text-shadow: 1px 1px black;
+		text-shadow: 1.5px 1.5px black;
 		color: white;
 	}
 
@@ -1487,13 +1487,17 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (min-width: 481px) {
 
 			.photo-content-mobile {
-				display: block;
+				display: none;
 			}
 
-			.video-content-mobile {
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.video-content-desktop {
 				display: none;
 			}
 
@@ -1716,9 +1720,10 @@ input, select, textarea {
 	}
 
 		#myPhoto {
-			position: fixed;
+			position:absolute;
 			right: 0;
 			bottom: 0;
-			min-width: 100%; 
-			min-height: 100%;
+			z-index:0;
+			height: 1000px;
+			margin:-10px;
 		}
