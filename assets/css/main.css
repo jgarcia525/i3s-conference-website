@@ -1488,19 +1488,9 @@ input, select, textarea {
 
 		}
 
-		@media screen and (min-width: 481px) {
-
-			.photo-content-mobile {
-				display: none;
-			}
-
-		}
-
 		@media screen and (max-width: 480px) {
 
-			.video-content-desktop {
-				display: none;
-			}
+	
 
 			#header {
 				padding: 1.5rem 0;
@@ -1661,6 +1651,28 @@ input, select, textarea {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
 			}
 
+		}
+
+		.mobileShow {
+			display: none;
+		} 
+		
+		/* Smartphone Portrait and Landscape */
+		@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+			.mobileShow {
+				display: inline;
+			}
+		}
+		
+		.mobileHide {
+			display: inline;
+		}
+		
+		/* Smartphone Portrait and Landscape */
+		@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+			.mobileHide {
+				display: none;
+			}
 		}
 
 	#employers h2 {
