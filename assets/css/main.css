@@ -1261,7 +1261,7 @@ input, select, textarea {
 		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
-		text-shadow: 1.5px 1.5px black;
+		text-shadow: 1px 1px black;
 		color: white;
 	}
 
@@ -1302,17 +1302,18 @@ input, select, textarea {
 		}
 
 		#header h2 {
-			color: #006532;
+			color: #009ee3;
 			font-weight: 900;
 		}
 
 		#header a {
-			color: #009ee3;
+			color: #2eac66;
 			font-weight: 700;
 		}
 
 		#header p {
 			color: white;
+			background-color: rgba(0,0,0,.35);
 			font-weight: 700;
 		}
 
